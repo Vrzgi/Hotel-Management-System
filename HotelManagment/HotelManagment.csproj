@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8FB4C4B2-5BA8-4DB7-BF76-927B053F09D0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HotelManagment</RootNamespace>
+    <AssemblyName>HotelManagment</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>hotel.png.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\..\..\Desktop\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=12.8.0.8, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DeleteReception.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteReception.Designer.cs">
+      <DependentUpon>DeleteReception.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteReserve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteReserve.Designer.cs">
+      <DependentUpon>DeleteReserve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteRoom.Designer.cs">
+      <DependentUpon>DeleteRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditReception.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditReception.Designer.cs">
+      <DependentUpon>EditReception.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditReserveForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditReserveForm.Designer.cs">
+      <DependentUpon>EditReserveForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditRoom.Designer.cs">
+      <DependentUpon>EditRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmptyRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmptyRoom.Designer.cs">
+      <DependentUpon>EmptyRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager.cs" />
+    <Compile Include="Passenger.cs" />
+    <Compile Include="Reception.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReceptionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReceptionForm.Designer.cs">
+      <DependentUpon>ReceptionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportReserve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportReserve.Designer.cs">
+      <DependentUpon>ReportReserve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReservationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReservationForm.Designer.cs">
+      <DependentUpon>ReservationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reserve.cs" />
+    <Compile Include="ReserveFinally.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReserveFinally.Designer.cs">
+      <DependentUpon>ReserveFinally.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Room.cs" />
+    <Compile Include="RoomReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoomReport.Designer.cs">
+      <DependentUpon>RoomReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubmitRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubmitRoom.Designer.cs">
+      <DependentUpon>SubmitRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuccessMessageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuccessMessageForm.Designer.cs">
+      <DependentUpon>SuccessMessageForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DeleteReception.resx">
+      <DependentUpon>DeleteReception.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteReserve.resx">
+      <DependentUpon>DeleteReserve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteRoom.resx">
+      <DependentUpon>DeleteRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditReception.resx">
+      <DependentUpon>EditReception.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditReserveForm.resx">
+      <DependentUpon>EditReserveForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditRoom.resx">
+      <DependentUpon>EditRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmptyRoom.resx">
+      <DependentUpon>EmptyRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReceptionForm.resx">
+      <DependentUpon>ReceptionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportReserve.resx">
+      <DependentUpon>ReportReserve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReservationForm.resx">
+      <DependentUpon>ReservationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReserveFinally.resx">
+      <DependentUpon>ReserveFinally.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoomReport.resx">
+      <DependentUpon>RoomReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubmitRoom.resx">
+      <DependentUpon>SubmitRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuccessMessageForm.resx">
+      <DependentUpon>SuccessMessageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackGround.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hotel Vector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="hotel.png.ico" />
+    <None Include="Resources\ReserveReport.png" />
+    <None Include="Resources\DeleteReserve.png" />
+    <None Include="Resources\EditReserveForm.png" />
+    <None Include="Resources\RserveFinally.png" />
+    <None Include="Resources\ReceptionForm.png" />
+    <None Include="Resources\ReservationForm.png" />
+    <None Include="Resources\DeleteRoom.png" />
+    <None Include="Resources\EmptyRoomForm.png" />
+    <None Include="Resources\EditRoomForm.png" />
+    <None Include="Resources\SuccessMassageForm.png" />
+    <None Include="Resources\SubmitRoomForm.png" />
+    <None Include="Resources\Delete Icon.png" />
+    <None Include="Resources\Dischange Icon.png" />
+    <None Include="Resources\Edit Icon.png" />
+    <None Include="Resources\Add Icon.png" />
+    <None Include="Resources\Room Report Form.png" />
+    <None Include="Resources\Discharge Room Icon.png" />
+    <None Include="Resources\Add Reception Icon.png" />
+    <None Include="Resources\Add Reservation Icon.png" />
+    <None Include="Resources\Add Room Icon.png" />
+    <None Include="Resources\reception.png" />
+    <None Include="Resources\icon-calendar.png" />
+    <None Include="Resources\reservation-512.png" />
+    <None Include="Resources\reservations.png" />
+    <None Include="Resources\bed.png" />
+    <None Include="Resources\Room Icon.png" />
+    <None Include="Resources\hotel.png" />
+    <None Include="Resources\icon %281%29.png" />
+    <None Include="Resources\icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
